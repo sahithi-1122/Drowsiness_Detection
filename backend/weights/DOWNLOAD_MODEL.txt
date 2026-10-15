@@ -1,0 +1,16 @@
+⚠️ MODEL WEIGHTS REQUIRED
+
+To run the application, you need to place trained model weights here.
+
+OPTIONS:
+
+1. Train your own model (RECOMMENDED for real drowsiness detection):
+   cd ../../ml_pipeline
+   python train.py --model yolo --epochs 50
+   copy models\yolo_best.pt ..\backend\weights\best.pt
+
+2. Download placeholder model (for testing pipeline only):
+   Download from: https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n-cls.pt
+   Save as: best.pt
+
+NOTE: The placeholder model is NOT trained on drowsiness data and won't give accurate predictions.
